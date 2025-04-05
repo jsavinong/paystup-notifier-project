@@ -1,0 +1,36 @@
+# .dockerignore
+
+# Development and testing files
+.pytest_cache/
+htmlcov/
+.coverage
+*.pyc
+__pycache__/
+
+# Local configuration files
+.env
+.env.local
+.venv/
+venv/
+
+# Temporary and upload directories
+uploads/
+tmp/
+*.tmp
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Documentation
+docs/_build/
+
+# Git
+.git/
+.gitignore
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

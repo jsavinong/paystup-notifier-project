@@ -1,0 +1,17 @@
+services:
+  app:
+    image: paystub-notifier-img
+    build: .
+    container_name: paystub-notifier-container
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+      - ./logos:/app/logos
+      - ./generated_paystubs:/app/generated_paystubs
+    env_file: .env
+    environment:
+
+      - FROM_EMAIL=payroll@atdev.com
+    
+    
